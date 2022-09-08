@@ -91,14 +91,14 @@ class UserAjaxController extends Controller
             'fullname' => 'required',
             'email' => 'required | email|unique:userrecords',
             'doj' => 'required',
-            'dol'=> 'required|date|gte:doj',
+           // 'dol'=> 'sometimes|gte:doj',
             'image1'=>'required',
         ];
         $messages = [
             'name.required' => 'Name is required',
             'email.unique' => 'Email Should be unique',
             'doj.required' => 'DOJ is required',
-            'dol.required' => 'DOL is required',
+           
             'image1'=> 'Image is required',
         ];
 
